@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora',sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: rgb(203, 6, 6);
+
+}
+h2{
+    /* font-style: italic; */
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+    
+}
+h4{
+    font-size: 20px;
+    
+    color: #222;
+    
+}
+h6{
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+p{
+    font-size: 16px;
+    margin:15px 0 20px 0 ;
+    color: #465b52;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: #20222a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c6969;
+    transition: 0.3s ease;
+}
+img{
+    max-width: 15%;
+    max-height: 15%;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(52, 97, 82);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* home page stylingg */
+#hero {
+    background-image: url(IMG/m.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 5% right 5%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
+}
+#hero h2{
+    padding: 10px;
+}
+#hero h1{
+    color: #000;
+
+}
+#hero button{
+    background-image: url("IMG/button.png");
+    background-color: transparent;
+    color: azure;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+#feature img{
+    max-width: 40%;
+    max-height: 40%;
+
+}
+#feature .fe-box{
+    width: 250px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,  0, 0,0.03);
+    border: 1px solid #9eb0a1;
+    background-color: #6c6969;
+
+
+}
+#feature .fe-box :hover{
+    box-shadow: 10px 10px 74px rgba(222, 7, 7, 0.918);
+}
